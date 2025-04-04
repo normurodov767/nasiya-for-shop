@@ -1,0 +1,281 @@
+.CustomerDetail {
+    width: 100%;
+    padding: 20px;
+    min-height: calc(100vh - 84px);
+}
+
+.CustomerDetail .container {
+    width: 100%;
+    max-width: 1540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CustomerDetail .customer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.CustomerDetail .customer__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.CustomerDetail .customer__header .back {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    border: 1px solid #ECECEC;
+    transition: all 0.3s ease-in-out;
+}
+
+.CustomerDetail .customer__header .back:hover {
+    border: 1px solid #5caaea;
+}
+
+.CustomerDetail .customer__header .dropdown {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.CustomerDetail .customer__content {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.CustomerDetail .customer__content .debt-list-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #e6e6e6;
+    color: #000;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__header p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__header h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #3478F7;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__header h4 span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__content {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__content h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__content h4 {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #735CD8;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__content h4 span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__content .progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: #CCCCCC;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.CustomerDetail .customer__content .debt-list-container .debt-item .debt-item__content .progress-bar {
+    height: 100%;
+    background-color: #30AF49;
+    transition: width 0.3s ease-in-out;
+}
+
+.CustomerDetail .customer__content .no-debt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+    margin-top: 100px;
+}
+
+.CustomerDetail .customer__content .no-debt h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.CustomerDetail .customer__content .no-debt p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000B2;
+}
+
+.CustomerDetail .add-debt {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #3478F7;
+    box-shadow: 0px 2px 4px 0px #3478F74D;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.product-creation-modal {
+    width: 100%;
+}
+
+.product-creation-modal .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.product-creation-modal .modal-header .back-button {
+    position: absolute;
+    left: 0;
+}
+
+.product-creation-modal .modal-header .modal-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.product-creation-modal .date-picker-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product-creation-modal .date-picker-wrapper .date-picker {
+    flex: 1;
+}
+
+.product-creation-modal .date-picker-wrapper .calendar-icon {
+    color: #3b82f6;
+}
+
+.product-creation-modal .upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-creation-modal .upload-placeholder .upload-icon {
+    font-size: 1.5rem;
+    color: #a1a1aa;
+}
+
+.product-creation-modal .upload-placeholder .upload-text {
+    font-size: 0.875rem;
+    color: #a1a1aa;
+}
+
+.product-creation-modal .save-button {
+    background-color: #60a5fa;
+}
+
+.product-creation-modal .save-button:hover {
+    background-color: #3b82f6;
+}

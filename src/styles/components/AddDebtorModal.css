@@ -1,0 +1,189 @@
+.add-debtor-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.add-debtor-form__name,
+.add-debtor-form__phone,
+.add-debtor-form__address,
+.add-debtor-form__description,
+.add-debtor-form__images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-debtor-form__name label,
+.add-debtor-form__phone label,
+.add-debtor-form__address label,
+.add-debtor-form__description label,
+.add-debtor-form__images label {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.add-debtor-form__name input,
+.add-debtor-form__phone input,
+.add-debtor-form__address input,
+.add-debtor-form__description input,
+.add-debtor-form__name textarea,
+.add-debtor-form__phone textarea,
+.add-debtor-form__address textarea,
+.add-debtor-form__description textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background: #F6F6F6;
+}
+
+.add-debtor-form__name input::placeholder,
+.add-debtor-form__phone input::placeholder,
+.add-debtor-form__address input::placeholder,
+.add-debtor-form__description input::placeholder,
+.add-debtor-form__name textarea::placeholder,
+.add-debtor-form__phone textarea::placeholder,
+.add-debtor-form__address textarea::placeholder,
+.add-debtor-form__description textarea::placeholder {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.add-debtor-form__name input:hover,
+.add-debtor-form__phone input:hover,
+.add-debtor-form__address input:hover,
+.add-debtor-form__description input:hover,
+.add-debtor-form__name input:focus,
+.add-debtor-form__phone input:focus,
+.add-debtor-form__address input:focus,
+.add-debtor-form__description input:focus,
+.add-debtor-form__name textarea:hover,
+.add-debtor-form__phone textarea:hover,
+.add-debtor-form__address textarea:hover,
+.add-debtor-form__description textarea:hover,
+.add-debtor-form__name textarea:focus,
+.add-debtor-form__phone textarea:focus,
+.add-debtor-form__address textarea:focus,
+.add-debtor-form__description textarea:focus {
+    border: 1px solid #2e7ad1;
+    background-color: #F6F6F6;
+}
+
+.add-debtor-form__name textarea,
+.add-debtor-form__phone textarea,
+.add-debtor-form__address textarea,
+.add-debtor-form__description textarea {
+    height: 100px;
+    resize: none;
+}
+
+.add-debtor-form__name-add,
+.add-debtor-form__phone-add,
+.add-debtor-form__address-add,
+.add-debtor-form__description-add,
+.add-debtor-form__images-add {
+    width: 130px;
+    align-self: flex-end;
+    margin-left: auto;
+    text-align: center;
+}
+
+.modal-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-actions button {
+    width: 130px;
+}
+
+.add-debtor-form__images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-debtor-form__images label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.add-debtor-form__images .image-upload-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.add-debtor-form__images .image-upload-item {
+    display: inline-block;
+    width: 100px;
+}
+
+.add-debtor-form__images .image-upload-button {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ececec;
+    background: #f6f6f6;
+}
+
+.add-debtor-form__images .image-upload-button:hover {
+    background-color: #e0e0e0;
+}
+
+.add-debtor-form__images .image-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.add-debtor-form__images .image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    cursor: pointer;
+}
+
+.add-debtor-form__images .image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
